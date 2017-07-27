@@ -4,6 +4,9 @@
   "description": "test project",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack ./src/index.js ./public/bundle.js",
+    "lint": "eslint ./src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/Aidar10/test/issues"
   },
-  "homepage": "https://github.com/Aidar10/test#readme"
+  "homepage": "https://github.com/Aidar10/test#readme",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^3.4.1"
+  }
 }
